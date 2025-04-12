@@ -1,3 +1,5 @@
+// GRAPH OBJECT STRUCTURE, OMIT THIS IS NOT A CS COURSE
+
 #include "Graph.h"
 #include <iostream>
 
@@ -13,6 +15,8 @@ void Graph::addEdge(int i, int j) {
 }
 
 void Graph::displayGraph() {
+    cout << "Graph displayed as matrix" << endl;
+
     for (int i = 0; i < vertices; i++) {
         cout << i << ": ";
         for (bool val : matrix[i]) {
@@ -20,6 +24,7 @@ void Graph::displayGraph() {
         }
         cout << "\n";
     }
+    cout << endl;
 }
 
 vector<vector<bool>> Graph::getMatrix() {
